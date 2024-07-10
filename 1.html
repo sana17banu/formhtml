@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Explore the World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="form.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your Adventure Awaits</h2>
+            <p>Discover beautiful destinations around the globe with us.</p>
+        </div>
+    </section>
+
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="paris.jpg" style="width:100%">
+                <div class="text">Paris</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="new york.jpg" style="width:100%">
+                <div class="text">New York</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="tokyo.webp" style="width:100%">
+                <div class="text">Tokyo</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>The City of Lights awaits you.</p>
+                </div>
+                <div class="card">
+                    <img src="new york.jpg" alt="New York">
+                    <h3>New York</h3>
+                    <p>The city that never sleeps.</p>
+                </div>
+                <div class="card">
+                    <img src="tokyo.webp" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                    <p>Experience the vibrant culture of Japan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
